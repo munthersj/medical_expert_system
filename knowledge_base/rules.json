@@ -1,0 +1,708 @@
+[
+  {
+    "id": "R001",
+    "condition_id": "possible_anemia_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "hemoglobin",
+          "status": "low"
+        },
+        {
+          "test": "hematocrit",
+          "status": "low"
+        },
+        {
+          "test": "rbc",
+          "status": "low"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 4,
+    "explanation": "One or more red blood cell measurements are low, which may suggest an anemia pattern.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R002",
+    "condition_id": "microcytic_anemia_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "hemoglobin",
+          "status": "low"
+        },
+        {
+          "test": "mcv",
+          "status": "low"
+        }
+      ]
+    },
+    "weight": 6,
+    "explanation": "Low hemoglobin together with low MCV supports a microcytic anemia pattern.",
+    "source": "Anemia pattern logic; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R003",
+    "condition_id": "microcytic_anemia_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "mch",
+          "status": "low"
+        }
+      ],
+      "any": [
+        {
+          "test": "mchc",
+          "status": "low"
+        },
+        {
+          "test": "rdw",
+          "status": "high"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 3,
+    "explanation": "Low MCH with low MCHC or high RDW may support a microcytic/hypochromic pattern.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R004",
+    "condition_id": "macrocytic_anemia_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "hemoglobin",
+          "status": "low"
+        },
+        {
+          "test": "mcv",
+          "status": "high"
+        }
+      ]
+    },
+    "weight": 6,
+    "explanation": "Low hemoglobin together with high MCV supports a macrocytic anemia pattern.",
+    "source": "Anemia pattern logic; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R005",
+    "condition_id": "normocytic_anemia_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "hemoglobin",
+          "status": "low"
+        },
+        {
+          "test": "mcv",
+          "status": "normal"
+        }
+      ]
+    },
+    "weight": 5,
+    "explanation": "Low hemoglobin with normal MCV supports a normocytic anemia pattern.",
+    "source": "Anemia pattern logic; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R006",
+    "condition_id": "possible_polycythemia_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "hemoglobin",
+          "status": "high"
+        },
+        {
+          "test": "hematocrit",
+          "status": "high"
+        },
+        {
+          "test": "rbc",
+          "status": "high"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 4,
+    "explanation": "One or more red blood cell measurements are high, which may suggest increased red cell concentration.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R007",
+    "condition_id": "possible_infection_inflammation_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "wbc",
+          "status": "high"
+        }
+      ]
+    },
+    "weight": 4,
+    "explanation": "WBC is high, which may suggest infection, inflammation, stress response, or other causes.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R008",
+    "condition_id": "possible_infection_inflammation_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "wbc",
+          "status": "high"
+        },
+        {
+          "test": "anc",
+          "status": "high"
+        }
+      ]
+    },
+    "weight": 4,
+    "explanation": "High WBC together with high ANC strengthens infection/inflammation evidence.",
+    "source": "CBC differential interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R009",
+    "condition_id": "possible_low_wbc_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "wbc",
+          "status": "low"
+        }
+      ]
+    },
+    "weight": 4,
+    "explanation": "WBC is low and needs medical interpretation.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R010",
+    "condition_id": "possible_neutrophilia_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "anc",
+          "status": "high"
+        },
+        {
+          "test": "neutrophils_percent",
+          "status": "high"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 4,
+    "explanation": "Neutrophil count or percentage is high, which may support bacterial infection, inflammation, stress, or medication effect.",
+    "source": "Differential interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R011",
+    "condition_id": "possible_neutropenia_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "anc",
+          "status": "low"
+        }
+      ]
+    },
+    "weight": 5,
+    "explanation": "ANC is low, which may suggest neutropenia.",
+    "source": "Differential interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R012",
+    "condition_id": "possible_lymphocytosis_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "alc",
+          "status": "high"
+        },
+        {
+          "test": "lymphocytes_percent",
+          "status": "high"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 4,
+    "explanation": "Lymphocyte count or percentage is high, which may support viral or immune-related patterns.",
+    "source": "Differential interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R013",
+    "condition_id": "possible_eosinophilia_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "aec",
+          "status": "high"
+        },
+        {
+          "test": "eosinophils_percent",
+          "status": "high"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 4,
+    "explanation": "Eosinophil count or percentage is high, which may support allergy, parasite exposure, or medication reaction patterns.",
+    "source": "Differential interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R014",
+    "condition_id": "possible_thrombocytopenia_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "platelets",
+          "status": "low"
+        }
+      ]
+    },
+    "weight": 5,
+    "explanation": "Platelet count is low, which may suggest thrombocytopenia pattern.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R015",
+    "condition_id": "possible_thrombocytosis_pattern",
+    "when": {
+      "all": [
+        {
+          "test": "platelets",
+          "status": "high"
+        }
+      ]
+    },
+    "weight": 5,
+    "explanation": "Platelet count is high, which may suggest thrombocytosis pattern.",
+    "source": "CBC interpretation; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R016",
+    "condition_id": "possible_combined_cytopenia_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "hemoglobin",
+          "status": "low"
+        },
+        {
+          "test": "wbc",
+          "status": "low"
+        },
+        {
+          "test": "platelets",
+          "status": "low"
+        }
+      ],
+      "min_matched": 2
+    },
+    "weight": 7,
+    "explanation": "At least two major blood cell lines are low, suggesting combined cytopenia pattern.",
+    "source": "CBC pattern logic; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R017",
+    "condition_id": "possible_hypoglycemia_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "fasting_glucose",
+          "status": "low"
+        },
+        {
+          "test": "random_glucose",
+          "status": "low"
+        },
+        {
+          "test": "postprandial_glucose",
+          "status": "low"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 6,
+    "explanation": "One glucose value is low, which may suggest hypoglycemia.",
+    "source": "Glucose threshold logic; doctor review recommended",
+    "active": true
+  },
+  {
+    "id": "R018",
+    "condition_id": "possible_prediabetes_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "fasting_glucose",
+          "status": "prediabetes"
+        },
+        {
+          "test": "hba1c",
+          "status": "prediabetes"
+        },
+        {
+          "test": "postprandial_glucose",
+          "status": "prediabetes"
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 4,
+    "explanation": "At least one glucose-related value is in the prediabetes range.",
+    "source": "Common glucose thresholds; confirmation required",
+    "active": true
+  },
+  {
+    "id": "R019",
+    "condition_id": "possible_prediabetes_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "fasting_glucose",
+          "status": "prediabetes"
+        },
+        {
+          "test": "hba1c",
+          "status": "prediabetes"
+        }
+      ],
+      "min_matched": 2
+    },
+    "weight": 4,
+    "explanation": "Both fasting glucose and HbA1c are in the prediabetes range, increasing evidence.",
+    "source": "Common glucose thresholds; confirmation required",
+    "active": true
+  },
+  {
+    "id": "R020",
+    "condition_id": "possible_diabetes_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "fasting_glucose",
+          "status": "diabetes"
+        },
+        {
+          "test": "random_glucose",
+          "status": "diabetes"
+        },
+        {
+          "test": "postprandial_glucose",
+          "status": "diabetes"
+        },
+        {
+          "test": "hba1c",
+          "status_in": [
+            "diabetes",
+            "very_high"
+          ]
+        }
+      ],
+      "min_matched": 1
+    },
+    "weight": 5,
+    "explanation": "At least one glucose-related value is in the diabetes range and needs clinical confirmation.",
+    "source": "Common glucose thresholds; confirmation required",
+    "active": true
+  },
+  {
+    "id": "R021",
+    "condition_id": "possible_diabetes_pattern",
+    "when": {
+      "any": [
+        {
+          "test": "fasting_glucose",
+          "status": "diabetes"
+        },
+        {
+          "test": "hba1c",
+          "status_in": [
+            "diabetes",
+            "very_high"
+          ]
+        }
+      ],
+      "min_matched": 2
+    },
+    "weight": 5,
+    "explanation": "Both fasting glucose and HbA1c are in the diabetes range, increasing evidence.",
+    "source": "Common glucose thresholds; confirmation required",
+    "active": true
+  },
+  {
+    "id": "R022",
+    "condition_id": "possible_poor_long_term_glucose_control",
+    "when": {
+      "all": [
+        {
+          "test": "hba1c",
+          "status": "very_high"
+        }
+      ]
+    },
+    "weight": 7,
+    "explanation": "HbA1c is very high, suggesting poor long-term glucose control.",
+    "source": "Clinical review recommended",
+    "active": true
+  },
+  {
+    "id": "R023",
+    "condition_id": "possible_discordant_glucose_results",
+    "when": {
+      "all": [
+        {
+          "test": "fasting_glucose",
+          "status": "normal"
+        },
+        {
+          "test": "hba1c",
+          "status_in": [
+            "diabetes",
+            "very_high"
+          ]
+        }
+      ]
+    },
+    "weight": 5,
+    "explanation": "Fasting glucose is normal but HbA1c is in diabetes range; results are discordant and need review.",
+    "source": "Clinical review recommended",
+    "active": true
+  },
+  {
+    "id": "R024",
+    "condition_id": "possible_discordant_glucose_results",
+    "when": {
+      "all": [
+        {
+          "test": "fasting_glucose",
+          "status": "diabetes"
+        },
+        {
+          "test": "hba1c",
+          "status": "normal"
+        }
+      ]
+    },
+    "weight": 5,
+    "explanation": "Fasting glucose is in diabetes range but HbA1c is normal; results are discordant and need review.",
+    "source": "Clinical review recommended",
+    "active": true
+  },
+  {
+  "id": "R025",
+  "condition_id": "possible_diabetes_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "ogtt_2h_glucose",
+        "status": "diabetes"
+      }
+    ]
+  },
+  "weight": 5,
+  "explanation": "Two-hour OGTT glucose is in the diabetes range and needs clinical confirmation.",
+  "source": "Common 2-hour glucose thresholds; confirmation required",
+  "active": true
+},
+{
+  "id": "R026",
+  "condition_id": "possible_prediabetes_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "ogtt_2h_glucose",
+        "status": "prediabetes"
+      }
+    ]
+  },
+  "weight": 4,
+  "explanation": "Two-hour OGTT glucose is in the prediabetes range.",
+  "source": "Common 2-hour glucose thresholds; confirmation required",
+  "active": true
+},
+{
+  "id": "R027",
+  "condition_id": "possible_eosinophilia_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "aec",
+        "status": "high"
+      }
+    ]
+  },
+  "weight": 5,
+  "explanation": "Absolute eosinophil count is high, which may support allergy, asthma, parasite exposure, medication reaction, or other causes.",
+  "source": "Differential interpretation; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R028",
+  "condition_id": "possible_neutrophilia_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "anc",
+        "status": "high"
+      }
+    ]
+  },
+  "weight": 5,
+  "explanation": "Absolute neutrophil count is high, which may support bacterial infection, inflammation, stress response, or medication effect.",
+  "source": "Differential interpretation; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R029",
+  "condition_id": "possible_neutropenia_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "anc",
+        "status": "low"
+      }
+    ]
+  },
+  "weight": 6,
+  "explanation": "Absolute neutrophil count is low, which may suggest neutropenia and needs medical interpretation.",
+  "source": "Differential interpretation; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R030",
+  "condition_id": "possible_lymphocytosis_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "alc",
+        "status": "high"
+      }
+    ]
+  },
+  "weight": 5,
+  "explanation": "Absolute lymphocyte count is high, which may support viral or immune-related patterns.",
+  "source": "Differential interpretation; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R031",
+  "condition_id": "possible_thrombocytopenia_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "platelets",
+        "status": "low"
+      },
+      {
+        "test": "mpv",
+        "status": "high"
+      }
+    ]
+  },
+  "weight": 3,
+  "explanation": "Low platelets with high MPV may suggest increased platelet turnover, but clinical interpretation is required.",
+  "source": "Platelet index interpretation; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R032",
+  "condition_id": "possible_anemia_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "hemoglobin",
+        "status": "low"
+      },
+      {
+        "test": "reticulocytes_percent",
+        "status": "low"
+      }
+    ]
+  },
+  "weight": 4,
+  "explanation": "Low hemoglobin with low reticulocytes may suggest reduced red blood cell production, requiring further evaluation.",
+  "source": "Anemia evaluation logic; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R033",
+  "condition_id": "possible_anemia_pattern",
+  "when": {
+    "all": [
+      {
+        "test": "hemoglobin",
+        "status": "low"
+      },
+      {
+        "test": "reticulocytes_percent",
+        "status": "high"
+      }
+    ]
+  },
+  "weight": 4,
+  "explanation": "Low hemoglobin with high reticulocytes may suggest increased red blood cell loss or destruction, requiring further evaluation.",
+  "source": "Anemia evaluation logic; doctor review recommended",
+  "active": true
+},
+{
+  "id": "R034",
+  "condition_id": "possible_poor_long_term_glucose_control",
+  "when": {
+    "all": [
+      {
+        "test": "fructosamine",
+        "status": "high"
+      }
+    ]
+  },
+  "weight": 4,
+  "explanation": "Fructosamine is high, which may suggest elevated short-term average glucose, depending on lab method and clinical context.",
+  "source": "Glucose monitoring interpretation; lab ranges vary",
+  "active": true
+},
+{
+  "id": "R035",
+  "condition_id": "possible_discordant_glucose_results",
+  "when": {
+    "all": [
+      {
+        "test": "fasting_glucose",
+        "status": "normal"
+      },
+      {
+        "test": "hba1c",
+        "status_in": [
+          "diabetes",
+          "very_high"
+        ]
+      }
+    ]
+  },
+  "weight": 5,
+  "explanation": "Fasting glucose is normal while HbA1c is in diabetes range; this discordance needs review.",
+  "source": "Clinical review recommended",
+  "active": true
+}
+]

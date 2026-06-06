@@ -1,0 +1,463 @@
+{
+  "possible_anemia_pattern": {
+    "name": "Possible anemia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "Low hemoglobin, hematocrit, or RBC may suggest an anemia pattern.",
+    "possible_causes": [
+      "Iron deficiency",
+      "Blood loss",
+      "Vitamin B12 or folate deficiency",
+      "Chronic inflammation",
+      "Kidney disease",
+      "Bone marrow disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Ferritin",
+      "Serum iron",
+      "TIBC",
+      "Vitamin B12",
+      "Folate",
+      "Reticulocyte count",
+      "Peripheral blood smear"
+    ],
+    "general_advice": [
+      "Consult a healthcare professional.",
+      "CBC alone is not enough to identify the exact cause."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "microcytic_anemia_pattern": {
+    "name": "Possible microcytic anemia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "Anemia with low MCV suggests small red blood cells.",
+    "possible_causes": [
+      "Iron deficiency",
+      "Thalassemia trait",
+      "Chronic inflammation"
+    ],
+    "suggested_follow_up_tests": [
+      "Ferritin",
+      "Serum iron",
+      "TIBC",
+      "Transferrin saturation",
+      "Peripheral blood smear"
+    ],
+    "general_advice": [
+      "Medical review is recommended.",
+      "Iron studies are commonly needed to support or exclude iron deficiency."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "macrocytic_anemia_pattern": {
+    "name": "Possible macrocytic anemia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "Anemia with high MCV suggests large red blood cells.",
+    "possible_causes": [
+      "Vitamin B12 deficiency",
+      "Folate deficiency",
+      "Liver disease",
+      "Alcohol use",
+      "Medication effects",
+      "Bone marrow disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Vitamin B12",
+      "Folate",
+      "Liver function tests",
+      "TSH",
+      "Peripheral smear"
+    ],
+    "general_advice": [
+      "Consult a healthcare professional.",
+      "B12 and folate evaluation may be needed."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "normocytic_anemia_pattern": {
+    "name": "Possible normocytic anemia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "Low hemoglobin with normal MCV may suggest normocytic anemia pattern.",
+    "possible_causes": [
+      "Acute blood loss",
+      "Chronic disease",
+      "Kidney disease",
+      "Hemolysis",
+      "Bone marrow disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Reticulocyte count",
+      "Creatinine",
+      "CRP",
+      "ESR",
+      "Peripheral smear"
+    ],
+    "general_advice": [
+      "Medical review is recommended.",
+      "Additional tests are usually needed."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_polycythemia_pattern": {
+    "name": "Possible polycythemia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "High hemoglobin, hematocrit, or RBC may suggest increased red cell concentration.",
+    "possible_causes": [
+      "Dehydration",
+      "Smoking",
+      "Chronic low oxygen",
+      "Polycythemia vera",
+      "High altitude"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Oxygen saturation",
+      "Erythropoietin level",
+      "JAK2 testing if clinically indicated"
+    ],
+    "general_advice": [
+      "Medical review is recommended if persistent."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_infection_inflammation_pattern": {
+    "name": "Possible infection or inflammation pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "High WBC may suggest infection, inflammation, stress response, medication effect, or other causes.",
+    "possible_causes": [
+      "Bacterial infection",
+      "Inflammation",
+      "Stress response",
+      "Steroid use",
+      "Bone marrow disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Clinical examination",
+      "CRP",
+      "ESR",
+      "Differential count",
+      "Culture if infection suspected"
+    ],
+    "general_advice": [
+      "Interpret with symptoms and clinical history.",
+      "Seek medical care if fever or severe symptoms are present."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_low_wbc_pattern": {
+    "name": "Possible low WBC pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "Low WBC may suggest reduced white blood cells.",
+    "possible_causes": [
+      "Viral infection",
+      "Medication effect",
+      "Autoimmune conditions",
+      "Bone marrow disorders",
+      "Nutritional deficiencies"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Differential count",
+      "Medication review",
+      "Peripheral smear"
+    ],
+    "general_advice": [
+      "Medical review is recommended, especially if fever or frequent infections are present."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_neutrophilia_pattern": {
+    "name": "Possible neutrophilia pattern",
+    "category": "derived_wbc",
+    "type": "pattern",
+    "description": "High ANC or neutrophil percentage may support bacterial infection, inflammation, stress, or medication effect.",
+    "possible_causes": [
+      "Bacterial infection",
+      "Inflammation",
+      "Stress response",
+      "Steroid use"
+    ],
+    "suggested_follow_up_tests": [
+      "Clinical exam",
+      "CRP",
+      "ESR",
+      "Repeat CBC"
+    ],
+    "general_advice": [
+      "Interpret with total WBC and symptoms."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_neutropenia_pattern": {
+    "name": "Possible neutropenia pattern",
+    "category": "derived_wbc",
+    "type": "pattern",
+    "description": "Low ANC may suggest neutropenia and requires careful interpretation.",
+    "possible_causes": [
+      "Viral infection",
+      "Medication effect",
+      "Bone marrow suppression",
+      "Autoimmune causes"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Medication review",
+      "Medical evaluation"
+    ],
+    "general_advice": [
+      "Medical review is recommended, especially with fever."
+    ],
+    "safety_note": "Fever with neutropenia can be urgent."
+  },
+  "possible_lymphocytosis_pattern": {
+    "name": "Possible lymphocytosis pattern",
+    "category": "derived_wbc",
+    "type": "pattern",
+    "description": "High ALC or lymphocyte percentage may support viral or immune-related patterns.",
+    "possible_causes": [
+      "Viral infection",
+      "Chronic inflammation",
+      "Some blood disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Peripheral smear if persistent",
+      "Clinical review"
+    ],
+    "general_advice": [
+      "Interpret with symptoms and total WBC."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_eosinophilia_pattern": {
+    "name": "Possible eosinophilia pattern",
+    "category": "derived_wbc",
+    "type": "pattern",
+    "description": "High AEC or eosinophil percentage may suggest allergy, asthma, parasite exposure, medication reaction, or other causes.",
+    "possible_causes": [
+      "Allergy",
+      "Asthma",
+      "Parasite exposure",
+      "Medication reaction",
+      "Autoimmune disease"
+    ],
+    "suggested_follow_up_tests": [
+      "Allergy evaluation",
+      "Stool tests if parasite risk exists",
+      "Medication review"
+    ],
+    "general_advice": [
+      "Medical review is recommended if persistent or symptomatic."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_thrombocytopenia_pattern": {
+    "name": "Possible thrombocytopenia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "Low platelet count may suggest thrombocytopenia pattern.",
+    "possible_causes": [
+      "Viral infection",
+      "Medication effect",
+      "Immune thrombocytopenia",
+      "Bone marrow disorders",
+      "Liver or spleen related problems"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Peripheral smear",
+      "Medication review",
+      "Liver function tests"
+    ],
+    "general_advice": [
+      "Consult a healthcare professional.",
+      "Seek urgent care if active bleeding occurs."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_thrombocytosis_pattern": {
+    "name": "Possible thrombocytosis pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "High platelet count may suggest thrombocytosis pattern.",
+    "possible_causes": [
+      "Inflammation",
+      "Infection",
+      "Iron deficiency",
+      "Recent surgery",
+      "Bone marrow disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Ferritin",
+      "CRP",
+      "ESR",
+      "Peripheral smear"
+    ],
+    "general_advice": [
+      "Medical review is recommended if persistent."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_combined_cytopenia_pattern": {
+    "name": "Possible combined cytopenia pattern",
+    "category": "cbc",
+    "type": "pattern",
+    "description": "More than one blood cell line appears low, which needs careful medical review.",
+    "possible_causes": [
+      "Medication effect",
+      "Viral infection",
+      "Autoimmune disease",
+      "Bone marrow disorders",
+      "Nutritional deficiency"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat CBC",
+      "Peripheral smear",
+      "Reticulocyte count",
+      "B12",
+      "Folate",
+      "Medical evaluation"
+    ],
+    "general_advice": [
+      "Medical review is strongly recommended."
+    ],
+    "safety_note": "This pattern can be important and should not be ignored."
+  },
+  "possible_hypoglycemia_pattern": {
+    "name": "Possible hypoglycemia pattern",
+    "category": "glucose",
+    "type": "pattern",
+    "description": "Low blood glucose may suggest hypoglycemia.",
+    "possible_causes": [
+      "Diabetes medication effect",
+      "Not eating enough",
+      "Heavy exercise",
+      "Alcohol use",
+      "Endocrine causes"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat glucose",
+      "Clinical assessment",
+      "Medication review"
+    ],
+    "general_advice": [
+      "Low blood sugar can be urgent if symptoms are present."
+    ],
+    "safety_note": "Urgent symptoms include confusion, fainting, seizure, or inability to eat/drink."
+  },
+  "possible_prediabetes_pattern": {
+    "name": "Possible prediabetes pattern",
+    "category": "glucose",
+    "type": "pattern",
+    "description": "Glucose or HbA1c is above normal but below common diabetes thresholds.",
+    "possible_causes": [
+      "Insulin resistance",
+      "Lifestyle factors",
+      "Family history",
+      "Overweight or obesity",
+      "Other metabolic risk factors"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat fasting glucose",
+      "HbA1c",
+      "OGTT if clinically indicated"
+    ],
+    "general_advice": [
+      "Confirm with a healthcare professional.",
+      "Lifestyle changes may help."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "possible_diabetes_pattern": {
+    "name": "Possible diabetes pattern",
+    "category": "glucose",
+    "type": "pattern",
+    "description": "Glucose or HbA1c may meet common diabetes thresholds; confirmation is required.",
+    "possible_causes": [
+      "Type 2 diabetes",
+      "Type 1 diabetes",
+      "Medication-induced hyperglycemia",
+      "Other endocrine or metabolic causes"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat test for confirmation",
+      "HbA1c",
+      "Fasting glucose",
+      "Clinical assessment"
+    ],
+    "general_advice": [
+      "Consult a healthcare professional for confirmation and management."
+    ],
+    "safety_note": "Very high glucose with severe symptoms can be urgent."
+  },
+  "possible_poor_long_term_glucose_control": {
+    "name": "Possible poor long-term glucose control",
+    "category": "glucose",
+    "type": "pattern",
+    "description": "High HbA1c may suggest elevated average glucose over recent months.",
+    "possible_causes": [
+      "Uncontrolled diabetes",
+      "Insufficient treatment",
+      "Lifestyle factors",
+      "Medication adherence issues"
+    ],
+    "suggested_follow_up_tests": [
+      "Clinical review",
+      "Medication review",
+      "Glucose monitoring plan"
+    ],
+    "general_advice": [
+      "Medical review is recommended."
+    ],
+    "safety_note": "HbA1c interpretation may be affected by some blood disorders."
+  },
+  "possible_discordant_glucose_results": {
+    "name": "Possible discordant glucose results",
+    "category": "glucose",
+    "type": "pattern",
+    "description": "Different glucose-related tests do not point to the same pattern.",
+    "possible_causes": [
+      "Recent diet or illness",
+      "Lab variation",
+      "Timing issue",
+      "A1c affected by blood disorders"
+    ],
+    "suggested_follow_up_tests": [
+      "Repeat testing",
+      "Clinical review",
+      "Consider OGTT if needed"
+    ],
+    "general_advice": [
+      "Do not rely on one result alone; confirm with a healthcare professional."
+    ],
+    "safety_note": "This is a pattern, not a final diagnosis."
+  },
+  "urgent_medical_attention_pattern": {
+  "name": "Urgent medical attention pattern",
+  "category": "safety",
+  "type": "red_flag_pattern",
+  "description": "One or more values may indicate the need for urgent medical attention.",
+  "possible_causes": [
+    "Severe anemia",
+    "Severe infection risk",
+    "Severe glucose abnormality",
+    "Severe platelet abnormality"
+  ],
+  "suggested_follow_up_tests": [
+    "Immediate clinical assessment",
+    "Repeat urgent lab testing if clinically indicated"
+  ],
+  "general_advice": [
+    "Seek urgent medical advice if severe symptoms are present.",
+    "This system cannot determine emergency severity without clinical examination."
+  ],
+  "safety_note": "This is an urgent warning pattern, not a final diagnosis."
+}
+}

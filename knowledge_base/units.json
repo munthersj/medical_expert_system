@@ -1,0 +1,330 @@
+{
+  "hemoglobin": {
+    "default_unit": "g/dL",
+    "supported_units": {
+      "g/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "g/L": {
+        "factor": 0.1,
+        "offset": 0
+      }
+    }
+  },
+  "hematocrit": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "L/L": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "rbc": {
+    "default_unit": "million cells/mcL",
+    "supported_units": {
+      "million cells/mcL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "10^12/L": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "wbc": {
+    "default_unit": "cells/mcL",
+    "supported_units": {
+      "cells/mcL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "10^9/L": {
+        "factor": 1000,
+        "offset": 0
+      },
+      "K/uL": {
+        "factor": 1000,
+        "offset": 0
+      },
+      "K/µL": {
+        "factor": 1000,
+        "offset": 0
+      }
+    }
+  },
+  "platelets": {
+    "default_unit": "cells/mcL",
+    "supported_units": {
+      "cells/mcL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "10^9/L": {
+        "factor": 1000,
+        "offset": 0
+      },
+      "K/uL": {
+        "factor": 1000,
+        "offset": 0
+      },
+      "K/µL": {
+        "factor": 1000,
+        "offset": 0
+      }
+    }
+  },
+  "mcv": {
+    "default_unit": "fL",
+    "supported_units": {
+      "fL": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "mch": {
+    "default_unit": "pg",
+    "supported_units": {
+      "pg": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "mchc": {
+    "default_unit": "g/dL",
+    "supported_units": {
+      "g/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "g/L": {
+        "factor": 0.1,
+        "offset": 0
+      }
+    }
+  },
+  "rdw": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "mpv": {
+    "default_unit": "fL",
+    "supported_units": {
+      "fL": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "neutrophils_percent": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "fraction": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "lymphocytes_percent": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "fraction": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "monocytes_percent": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "fraction": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "eosinophils_percent": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "fraction": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "basophils_percent": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "fraction": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "reticulocytes_percent": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "fraction": {
+        "factor": 100,
+        "offset": 0
+      }
+    }
+  },
+  "fasting_glucose": {
+    "default_unit": "mg/dL",
+    "supported_units": {
+      "mg/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mmol/L": {
+        "factor": 18,
+        "offset": 0
+      }
+    }
+  },
+  "random_glucose": {
+    "default_unit": "mg/dL",
+    "supported_units": {
+      "mg/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mmol/L": {
+        "factor": 18,
+        "offset": 0
+      }
+    }
+  },
+  "postprandial_glucose": {
+    "default_unit": "mg/dL",
+    "supported_units": {
+      "mg/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mmol/L": {
+        "factor": 18,
+        "offset": 0
+      }
+    }
+  },
+  "ogtt_2h_glucose": {
+    "default_unit": "mg/dL",
+    "supported_units": {
+      "mg/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mmol/L": {
+        "factor": 18,
+        "offset": 0
+      }
+    }
+  },
+  "estimated_average_glucose": {
+    "default_unit": "mg/dL",
+    "supported_units": {
+      "mg/dL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mmol/L": {
+        "factor": 18,
+        "offset": 0
+      }
+    }
+  },
+  "hba1c": {
+    "default_unit": "%",
+    "supported_units": {
+      "%": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mmol/mol": {
+        "formula": "ifcc_to_ngsp"
+      }
+    }
+  },
+  "fructosamine": {
+    "default_unit": "umol/L",
+    "supported_units": {
+      "umol/L": {
+        "factor": 1,
+        "offset": 0
+      },
+      "µmol/L": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "fasting_insulin": {
+    "default_unit": "uIU/mL",
+    "supported_units": {
+      "uIU/mL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "µIU/mL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "mIU/L": {
+        "factor": 1,
+        "offset": 0
+      }
+    }
+  },
+  "c_peptide": {
+    "default_unit": "ng/mL",
+    "supported_units": {
+      "ng/mL": {
+        "factor": 1,
+        "offset": 0
+      },
+      "nmol/L": {
+        "factor": 3.02,
+        "offset": 0
+      }
+    }
+  }
+}

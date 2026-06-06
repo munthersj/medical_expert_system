@@ -1,0 +1,128 @@
+[
+  {
+    "id": "F001",
+    "test": "hemoglobin",
+    "operator": "<",
+    "value": 7.0,
+    "message": "Very low hemoglobin may require urgent medical attention, especially with shortness of breath, chest pain, fainting, or severe weakness.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F002",
+    "test": "wbc",
+    "operator": ">",
+    "value": 30000,
+    "message": "Very high WBC may require urgent medical evaluation, especially with fever or severe symptoms.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F003",
+    "test": "wbc",
+    "operator": "<",
+    "value": 2000,
+    "message": "Very low WBC may increase infection risk and should be reviewed urgently, especially if fever is present.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F004",
+    "test": "platelets",
+    "operator": "<",
+    "value": 50000,
+    "message": "Very low platelets may increase bleeding risk and need urgent medical review, especially with bleeding or bruising.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F005",
+    "test": "platelets",
+    "operator": ">",
+    "value": 1000000,
+    "message": "Extremely high platelets may require urgent medical evaluation.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F006",
+    "test": "fasting_glucose",
+    "operator": "<",
+    "value": 54,
+    "message": "Very low fasting glucose can be urgent, especially with confusion, fainting, seizure, or inability to eat/drink.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F007",
+    "test": "random_glucose",
+    "operator": "<",
+    "value": 54,
+    "message": "Very low random glucose can be urgent, especially with confusion, fainting, seizure, or inability to eat/drink.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F008",
+    "test": "random_glucose",
+    "operator": ">",
+    "value": 300,
+    "message": "Very high random glucose may require urgent medical advice, especially with vomiting, dehydration, confusion, or rapid breathing.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+    "id": "F009",
+    "test": "fasting_glucose",
+    "operator": ">",
+    "value": 250,
+    "message": "Very high fasting glucose may require prompt medical evaluation.",
+    "severity": "warning",
+    "active": true
+  },
+  {
+    "id": "F010",
+    "test": "hba1c",
+    "operator": ">=",
+    "value": 10.0,
+    "message": "Very high HbA1c suggests poor long-term glucose control and should be reviewed by a healthcare professional.",
+    "severity": "warning",
+    "active": true
+  },
+  {
+    "id": "F011",
+    "test": "anc",
+    "operator": "<",
+    "value": 500,
+    "message": "Very low ANC may be urgent, especially if fever is present.",
+    "severity": "urgent",
+    "active": true
+  },
+  {
+  "id": "F012",
+  "test": "ogtt_2h_glucose",
+  "operator": ">",
+  "value": 300,
+  "message": "Very high 2-hour glucose may require prompt medical evaluation, especially with symptoms.",
+  "severity": "warning",
+  "active": true
+},
+{
+  "id": "F013",
+  "test": "fructosamine",
+  "operator": ">",
+  "value": 400,
+  "message": "Very high fructosamine may suggest poor short-term glucose control and should be reviewed by a healthcare professional.",
+  "severity": "warning",
+  "active": true
+},
+{
+  "id": "F014",
+  "test": "anc",
+  "operator": "<",
+  "value": 500,
+  "message": "Very low ANC may be urgent, especially if fever is present.",
+  "severity": "urgent",
+  "active": true
+}
+]

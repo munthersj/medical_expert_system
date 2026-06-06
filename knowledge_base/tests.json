@@ -1,0 +1,1332 @@
+{
+    "hemoglobin": {
+        "name": "Hemoglobin",
+        "short_name": "Hb",
+        "aliases": [
+            "HGB",
+            "Hb",
+            "Hemoglobin"
+        ],
+        "category": "cbc",
+        "unit": "g/dL",
+        "value_type": "numeric",
+        "sex_based": true,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 13.5,
+                    "normal_min": 13.5,
+                    "normal_max": 24.0,
+                    "high_above": 24.0
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 11.0,
+                    "normal_min": 11.0,
+                    "normal_max": 14.5,
+                    "high_above": 14.5
+                }
+            },
+            "adolescent": {
+                "male": {
+                    "low_below": 12.5,
+                    "normal_min": 12.5,
+                    "normal_max": 16.5,
+                    "high_above": 16.5
+                },
+                "female": {
+                    "low_below": 12.0,
+                    "normal_min": 12.0,
+                    "normal_max": 16.0,
+                    "high_above": 16.0
+                }
+            },
+            "adult": {
+                "male": {
+                    "low_below": 13.0,
+                    "normal_min": 13.0,
+                    "normal_max": 18.0,
+                    "high_above": 18.0
+                },
+                "female": {
+                    "low_below": 12.0,
+                    "normal_min": 12.0,
+                    "normal_max": 16.0,
+                    "high_above": 16.0
+                }
+            }
+        },
+        "description": "Oxygen-carrying protein in red blood cells.",
+        "source": "MedlinePlus adult CBC reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "hematocrit": {
+        "name": "Hematocrit",
+        "short_name": "Hct",
+        "aliases": [
+            "HCT",
+            "PCV",
+            "Hematocrit"
+        ],
+        "category": "cbc",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": true,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 42.0,
+                    "normal_min": 42.0,
+                    "normal_max": 65.0,
+                    "high_above": 65.0
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 33.0,
+                    "normal_min": 33.0,
+                    "normal_max": 43.0,
+                    "high_above": 43.0
+                }
+            },
+            "adolescent": {
+                "male": {
+                    "low_below": 37.0,
+                    "normal_min": 37.0,
+                    "normal_max": 49.0,
+                    "high_above": 49.0
+                },
+                "female": {
+                    "low_below": 36.0,
+                    "normal_min": 36.0,
+                    "normal_max": 46.0,
+                    "high_above": 46.0
+                }
+            },
+            "adult": {
+                "male": {
+                    "low_below": 40.0,
+                    "normal_min": 40.0,
+                    "normal_max": 55.0,
+                    "high_above": 55.0
+                },
+                "female": {
+                    "low_below": 36.0,
+                    "normal_min": 36.0,
+                    "normal_max": 48.0,
+                    "high_above": 48.0
+                }
+            }
+        },
+        "description": "Percentage of blood volume made up of red blood cells.",
+        "source": "MedlinePlus adult CBC reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "rbc": {
+        "name": "Red Blood Cells",
+        "short_name": "RBC",
+        "aliases": [
+            "RBC",
+            "Red Blood Cell Count",
+            "Erythrocytes"
+        ],
+        "category": "cbc",
+        "unit": "million cells/mcL",
+        "value_type": "numeric",
+        "sex_based": true,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 4.0,
+                    "normal_min": 4.0,
+                    "normal_max": 6.6,
+                    "high_above": 6.6
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 4.0,
+                    "normal_min": 4.0,
+                    "normal_max": 5.2,
+                    "high_above": 5.2
+                }
+            },
+            "adolescent": {
+                "male": {
+                    "low_below": 4.5,
+                    "normal_min": 4.5,
+                    "normal_max": 5.9,
+                    "high_above": 5.9
+                },
+                "female": {
+                    "low_below": 4.1,
+                    "normal_min": 4.1,
+                    "normal_max": 5.1,
+                    "high_above": 5.1
+                }
+            },
+            "adult": {
+                "male": {
+                    "low_below": 4.6,
+                    "normal_min": 4.6,
+                    "normal_max": 6.2,
+                    "high_above": 6.2
+                },
+                "female": {
+                    "low_below": 4.2,
+                    "normal_min": 4.2,
+                    "normal_max": 5.4,
+                    "high_above": 5.4
+                }
+            }
+        },
+        "description": "Number of red blood cells.",
+        "source": "MedlinePlus adult CBC reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "wbc": {
+        "name": "White Blood Cells",
+        "short_name": "WBC",
+        "aliases": [
+            "WBC",
+            "White Blood Cell Count",
+            "Leukocytes"
+        ],
+        "category": "cbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 9000,
+                    "normal_min": 9000,
+                    "normal_max": 30000,
+                    "high_above": 30000
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 5000,
+                    "normal_min": 5000,
+                    "normal_max": 15000,
+                    "high_above": 15000
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 4500,
+                    "normal_min": 4500,
+                    "normal_max": 13000,
+                    "high_above": 13000
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 4500,
+                    "normal_min": 4500,
+                    "normal_max": 11000,
+                    "high_above": 11000
+                }
+            }
+        },
+        "description": "Number of white blood cells.",
+        "source": "MedlinePlus adult CBC reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "platelets": {
+        "name": "Platelets",
+        "short_name": "PLT",
+        "aliases": [
+            "PLT",
+            "Platelets",
+            "Platelet Count"
+        ],
+        "category": "cbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 150000,
+                    "normal_min": 150000,
+                    "normal_max": 450000,
+                    "high_above": 450000
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 150000,
+                    "normal_min": 150000,
+                    "normal_max": 450000,
+                    "high_above": 450000
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 150000,
+                    "normal_min": 150000,
+                    "normal_max": 450000,
+                    "high_above": 450000
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 150000,
+                    "normal_min": 150000,
+                    "normal_max": 450000,
+                    "high_above": 450000
+                }
+            }
+        },
+        "description": "Cells involved in blood clotting.",
+        "source": "MedlinePlus adult CBC reference; generally similar prototype ranges across ages; lab ranges may vary"
+    },
+    "mcv": {
+        "name": "Mean Corpuscular Volume",
+        "short_name": "MCV",
+        "aliases": [
+            "MCV"
+        ],
+        "category": "cbc_indices",
+        "unit": "fL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 95,
+                    "normal_min": 95,
+                    "normal_max": 121,
+                    "high_above": 121
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 75,
+                    "normal_min": 75,
+                    "normal_max": 87,
+                    "high_above": 87
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 78,
+                    "normal_min": 78,
+                    "normal_max": 98,
+                    "high_above": 98
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 80,
+                    "normal_min": 80,
+                    "normal_max": 100,
+                    "high_above": 100
+                }
+            }
+        },
+        "description": "Average size of red blood cells.",
+        "source": "MedlinePlus adult RBC indices reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "mch": {
+        "name": "Mean Corpuscular Hemoglobin",
+        "short_name": "MCH",
+        "aliases": [
+            "MCH"
+        ],
+        "category": "cbc_indices",
+        "unit": "pg",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 31,
+                    "normal_min": 31,
+                    "normal_max": 37,
+                    "high_above": 37
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 24,
+                    "normal_min": 24,
+                    "normal_max": 30,
+                    "high_above": 30
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 25,
+                    "normal_min": 25,
+                    "normal_max": 32,
+                    "high_above": 32
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 27,
+                    "normal_min": 27,
+                    "normal_max": 32,
+                    "high_above": 32
+                }
+            }
+        },
+        "description": "Average amount of hemoglobin per red blood cell.",
+        "source": "MedlinePlus adult RBC indices reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "mchc": {
+        "name": "Mean Corpuscular Hemoglobin Concentration",
+        "short_name": "MCHC",
+        "aliases": [
+            "MCHC"
+        ],
+        "category": "cbc_indices",
+        "unit": "g/dL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 30,
+                    "normal_min": 30,
+                    "normal_max": 36,
+                    "high_above": 36
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 31,
+                    "normal_min": 31,
+                    "normal_max": 36,
+                    "high_above": 36
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 32,
+                    "normal_min": 32,
+                    "normal_max": 36,
+                    "high_above": 36
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 32,
+                    "normal_min": 32,
+                    "normal_max": 36,
+                    "high_above": 36
+                }
+            }
+        },
+        "description": "Average concentration of hemoglobin in red blood cells.",
+        "source": "MedlinePlus adult RBC indices reference; pediatric values are prototype ranges and may vary by lab"
+    },
+    "rdw": {
+        "name": "Red Cell Distribution Width",
+        "short_name": "RDW",
+        "aliases": [
+            "RDW",
+            "RDW-CV"
+        ],
+        "category": "cbc_indices",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 11.5,
+                    "normal_min": 11.5,
+                    "normal_max": 18.0,
+                    "high_above": 18.0
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 11.5,
+                    "normal_min": 11.5,
+                    "normal_max": 14.5,
+                    "high_above": 14.5
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 11.5,
+                    "normal_min": 11.5,
+                    "normal_max": 14.5,
+                    "high_above": 14.5
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 11.5,
+                    "normal_min": 11.5,
+                    "normal_max": 14.5,
+                    "high_above": 14.5
+                }
+            }
+        },
+        "description": "Variation in red blood cell size.",
+        "source": "Prototype ranges; lab ranges may vary"
+    },
+    "mpv": {
+        "name": "Mean Platelet Volume",
+        "short_name": "MPV",
+        "aliases": [
+            "MPV"
+        ],
+        "category": "platelet_indices",
+        "unit": "fL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 7.0,
+                    "normal_min": 7.0,
+                    "normal_max": 12.0,
+                    "high_above": 12.0
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 7.0,
+                    "normal_min": 7.0,
+                    "normal_max": 11.5,
+                    "high_above": 11.5
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 7.0,
+                    "normal_min": 7.0,
+                    "normal_max": 11.5,
+                    "high_above": 11.5
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 7.5,
+                    "normal_min": 7.5,
+                    "normal_max": 11.5,
+                    "high_above": 11.5
+                }
+            }
+        },
+        "description": "Average platelet size.",
+        "source": "Prototype ranges; lab ranges may vary"
+    },
+    "neutrophils_percent": {
+        "name": "Neutrophils Percentage",
+        "short_name": "NEUT%",
+        "aliases": [
+            "NEUT%",
+            "Neutrophils %",
+            "Segmented neutrophils"
+        ],
+        "category": "wbc_differential",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 40,
+                    "normal_min": 40,
+                    "normal_max": 80,
+                    "high_above": 80
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 30,
+                    "normal_min": 30,
+                    "normal_max": 60,
+                    "high_above": 60
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 40,
+                    "normal_min": 40,
+                    "normal_max": 70,
+                    "high_above": 70
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 40,
+                    "normal_min": 40,
+                    "normal_max": 70,
+                    "high_above": 70
+                }
+            }
+        },
+        "description": "Percentage of neutrophils among white blood cells.",
+        "source": "Prototype differential ranges; absolute counts are more useful clinically"
+    },
+    "lymphocytes_percent": {
+        "name": "Lymphocytes Percentage",
+        "short_name": "LYMPH%",
+        "aliases": [
+            "LYMPH%",
+            "Lymphocytes %"
+        ],
+        "category": "wbc_differential",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 20,
+                    "normal_min": 20,
+                    "normal_max": 50,
+                    "high_above": 50
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 30,
+                    "normal_min": 30,
+                    "normal_max": 60,
+                    "high_above": 60
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 20,
+                    "normal_min": 20,
+                    "normal_max": 45,
+                    "high_above": 45
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 20,
+                    "normal_min": 20,
+                    "normal_max": 40,
+                    "high_above": 40
+                }
+            }
+        },
+        "description": "Percentage of lymphocytes among white blood cells.",
+        "source": "Prototype differential ranges; absolute counts are more useful clinically"
+    },
+    "monocytes_percent": {
+        "name": "Monocytes Percentage",
+        "short_name": "MONO%",
+        "aliases": [
+            "MONO%",
+            "Monocytes %"
+        ],
+        "category": "wbc_differential",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 12,
+                    "high_above": 12
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 10,
+                    "high_above": 10
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 8,
+                    "high_above": 8
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 8,
+                    "high_above": 8
+                }
+            }
+        },
+        "description": "Percentage of monocytes among white blood cells.",
+        "source": "Prototype differential ranges; lab ranges may vary"
+    },
+    "eosinophils_percent": {
+        "name": "Eosinophils Percentage",
+        "short_name": "EOS%",
+        "aliases": [
+            "EOS%",
+            "Eosinophils %"
+        ],
+        "category": "wbc_differential",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 6,
+                    "high_above": 6
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 6,
+                    "high_above": 6
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 5,
+                    "high_above": 5
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 4,
+                    "high_above": 4
+                }
+            }
+        },
+        "description": "Percentage of eosinophils among white blood cells.",
+        "source": "Prototype differential ranges; lab ranges may vary"
+    },
+    "basophils_percent": {
+        "name": "Basophils Percentage",
+        "short_name": "BASO%",
+        "aliases": [
+            "BASO%",
+            "Basophils %"
+        ],
+        "category": "wbc_differential",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 2,
+                    "high_above": 2
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 1.5,
+                    "high_above": 1.5
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 1,
+                    "high_above": 1
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 1,
+                    "high_above": 1
+                }
+            }
+        },
+        "description": "Percentage of basophils among white blood cells.",
+        "source": "Prototype differential ranges; lab ranges may vary"
+    },
+    "anc": {
+        "name": "Absolute Neutrophil Count",
+        "short_name": "ANC",
+        "aliases": [
+            "ANC",
+            "Absolute Neutrophils",
+            "Neutrophils Absolute"
+        ],
+        "category": "derived_wbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "derived": true,
+        "formula": "wbc * neutrophils_percent / 100",
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 6000,
+                    "normal_min": 6000,
+                    "normal_max": 26000,
+                    "high_above": 26000
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 1500,
+                    "normal_min": 1500,
+                    "normal_max": 8500,
+                    "high_above": 8500
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 1500,
+                    "normal_min": 1500,
+                    "normal_max": 8000,
+                    "high_above": 8000
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 1500,
+                    "normal_min": 1500,
+                    "normal_max": 8000,
+                    "high_above": 8000
+                }
+            }
+        },
+        "description": "Calculated as WBC \u00d7 neutrophils percentage / 100.",
+        "source": "Derived value; prototype age-based ranges; lab ranges may vary"
+    },
+    "alc": {
+        "name": "Absolute Lymphocyte Count",
+        "short_name": "ALC",
+        "aliases": [
+            "ALC",
+            "Absolute Lymphocytes",
+            "Lymphocytes Absolute"
+        ],
+        "category": "derived_wbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "derived": true,
+        "formula": "wbc * lymphocytes_percent / 100",
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 2000,
+                    "normal_min": 2000,
+                    "normal_max": 11000,
+                    "high_above": 11000
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 1500,
+                    "normal_min": 1500,
+                    "normal_max": 7000,
+                    "high_above": 7000
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 1200,
+                    "normal_min": 1200,
+                    "normal_max": 5200,
+                    "high_above": 5200
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 1000,
+                    "normal_min": 1000,
+                    "normal_max": 4800,
+                    "high_above": 4800
+                }
+            }
+        },
+        "description": "Calculated as WBC \u00d7 lymphocytes percentage / 100.",
+        "source": "Derived value; prototype age-based ranges; lab ranges may vary"
+    },
+    "aec": {
+        "name": "Absolute Eosinophil Count",
+        "short_name": "AEC",
+        "aliases": [
+            "AEC",
+            "Absolute Eosinophils",
+            "Eosinophils Absolute"
+        ],
+        "category": "derived_wbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "derived": true,
+        "formula": "wbc * eosinophils_percent / 100",
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 1000,
+                    "high_above": 1000
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 700,
+                    "high_above": 700
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 600,
+                    "high_above": 600
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 500,
+                    "high_above": 500
+                }
+            }
+        },
+        "description": "Calculated as WBC \u00d7 eosinophils percentage / 100.",
+        "source": "Derived value; prototype age-based ranges; lab ranges may vary"
+    },
+    "absolute_monocytes": {
+        "name": "Absolute Monocyte Count",
+        "short_name": "AMC",
+        "aliases": [
+            "AMC",
+            "Absolute Monocytes",
+            "Monocytes Absolute"
+        ],
+        "category": "derived_wbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "derived": true,
+        "formula": "wbc * monocytes_percent / 100",
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 2000,
+                    "high_above": 2000
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 1200,
+                    "high_above": 1200
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 1000,
+                    "high_above": 1000
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 800,
+                    "high_above": 800
+                }
+            }
+        },
+        "description": "Calculated as WBC \u00d7 monocytes percentage / 100.",
+        "source": "Derived value; prototype ranges; lab ranges may vary"
+    },
+    "absolute_basophils": {
+        "name": "Absolute Basophil Count",
+        "short_name": "ABC",
+        "aliases": [
+            "ABC",
+            "Absolute Basophils",
+            "Basophils Absolute"
+        ],
+        "category": "derived_wbc",
+        "unit": "cells/mcL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "derived": true,
+        "formula": "wbc * basophils_percent / 100",
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 300,
+                    "high_above": 300
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 200,
+                    "high_above": 200
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 150,
+                    "high_above": 150
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 0,
+                    "normal_min": 0,
+                    "normal_max": 100,
+                    "high_above": 100
+                }
+            }
+        },
+        "description": "Calculated as WBC \u00d7 basophils percentage / 100.",
+        "source": "Derived value; prototype ranges; lab ranges may vary"
+    },
+    "reticulocytes_percent": {
+        "name": "Reticulocytes Percentage",
+        "short_name": "RET%",
+        "aliases": [
+            "RET%",
+            "Reticulocytes %"
+        ],
+        "category": "cbc_extended",
+        "unit": "%",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 2.0,
+                    "normal_min": 2.0,
+                    "normal_max": 6.0,
+                    "high_above": 6.0
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 2.0,
+                    "high_above": 2.0
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 2.0,
+                    "high_above": 2.0
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 2.0,
+                    "high_above": 2.0
+                }
+            }
+        },
+        "description": "Percentage of young red blood cells.",
+        "source": "Prototype ranges; lab ranges may vary"
+    },
+    "fasting_glucose": {
+        "name": "Fasting Blood Glucose",
+        "short_name": "FBS",
+        "aliases": [
+            "FBS",
+            "FPG",
+            "Fasting Glucose",
+            "Fasting Blood Sugar"
+        ],
+        "category": "glucose",
+        "unit": "mg/dL",
+        "value_type": "numeric",
+        "classifier": "glucose_fasting",
+        "description": "Blood glucose after fasting for at least 8 hours.",
+        "source": "ADA/MedlinePlus diagnostic thresholds; confirmation required"
+    },
+    "random_glucose": {
+        "name": "Random Blood Glucose",
+        "short_name": "RBS",
+        "aliases": [
+            "RBS",
+            "RPG",
+            "Random Glucose",
+            "Random Blood Sugar"
+        ],
+        "category": "glucose",
+        "unit": "mg/dL",
+        "value_type": "numeric",
+        "classifier": "glucose_random",
+        "description": "Blood glucose measured at any time.",
+        "source": "ADA/MedlinePlus diagnostic thresholds; confirmation required"
+    },
+    "postprandial_glucose": {
+        "name": "Postprandial Blood Glucose",
+        "short_name": "PPBS",
+        "aliases": [
+            "PPBS",
+            "Postprandial Glucose",
+            "2 hours post meal",
+            "2h PP"
+        ],
+        "category": "glucose",
+        "unit": "mg/dL",
+        "value_type": "numeric",
+        "classifier": "glucose_postprandial",
+        "description": "Blood glucose commonly measured about 2 hours after eating.",
+        "source": "Common 2-hour glucose thresholds; confirmation required"
+    },
+    "ogtt_2h_glucose": {
+        "name": "Oral Glucose Tolerance Test - 2 Hour Glucose",
+        "short_name": "OGTT 2h",
+        "aliases": [
+            "OGTT",
+            "2-hour plasma glucose",
+            "2h OGTT"
+        ],
+        "category": "glucose",
+        "unit": "mg/dL",
+        "value_type": "numeric",
+        "classifier": "glucose_postprandial",
+        "description": "Two-hour plasma glucose after oral glucose tolerance test.",
+        "source": "ADA/MedlinePlus 2-hour glucose thresholds; confirmation required"
+    },
+    "hba1c": {
+        "name": "Hemoglobin A1c",
+        "short_name": "HbA1c",
+        "aliases": [
+            "HbA1c",
+            "A1C",
+            "Glycated Hemoglobin"
+        ],
+        "category": "glucose",
+        "unit": "%",
+        "value_type": "numeric",
+        "classifier": "hba1c",
+        "description": "Reflects average blood glucose over roughly 2 to 3 months.",
+        "source": "ADA/MedlinePlus A1C thresholds; confirmation required"
+    },
+    "estimated_average_glucose": {
+        "name": "Estimated Average Glucose",
+        "short_name": "eAG",
+        "aliases": [
+            "eAG",
+            "Estimated Average Glucose"
+        ],
+        "category": "glucose_monitoring",
+        "unit": "mg/dL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 70,
+                    "normal_min": 70,
+                    "normal_max": 139,
+                    "high_above": 139
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 70,
+                    "normal_min": 70,
+                    "normal_max": 139,
+                    "high_above": 139
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 70,
+                    "normal_min": 70,
+                    "normal_max": 139,
+                    "high_above": 139
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 70,
+                    "normal_min": 70,
+                    "normal_max": 139,
+                    "high_above": 139
+                }
+            }
+        },
+        "description": "Estimated average glucose sometimes reported with HbA1c.",
+        "source": "Prototype monitoring range; not a standalone diagnostic test"
+    },
+    "fructosamine": {
+        "name": "Fructosamine",
+        "short_name": "Fructosamine",
+        "aliases": [
+            "Fructosamine"
+        ],
+        "category": "glucose_monitoring",
+        "unit": "umol/L",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 285,
+                    "high_above": 285
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 285,
+                    "high_above": 285
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 285,
+                    "high_above": 285
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 200,
+                    "normal_min": 200,
+                    "normal_max": 285,
+                    "high_above": 285
+                }
+            }
+        },
+        "description": "Shorter-term glucose control marker, usually reflecting about 2 to 3 weeks.",
+        "source": "Prototype range; lab ranges vary significantly"
+    },
+    "fasting_insulin": {
+        "name": "Fasting Insulin",
+        "short_name": "Insulin",
+        "aliases": [
+            "Insulin",
+            "Fasting Insulin"
+        ],
+        "category": "glucose_related",
+        "unit": "uIU/mL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 25,
+                    "high_above": 25
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 25,
+                    "high_above": 25
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 25,
+                    "high_above": 25
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 2,
+                    "normal_min": 2,
+                    "normal_max": 25,
+                    "high_above": 25
+                }
+            }
+        },
+        "description": "Fasting insulin level; interpretation depends heavily on clinical context and lab method.",
+        "source": "Prototype range; lab ranges vary significantly"
+    },
+    "c_peptide": {
+        "name": "C-Peptide",
+        "short_name": "C-Peptide",
+        "aliases": [
+            "C-Peptide",
+            "C peptide"
+        ],
+        "category": "glucose_related",
+        "unit": "ng/mL",
+        "value_type": "numeric",
+        "sex_based": false,
+        "ranges": {
+            "newborn": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 3.3,
+                    "high_above": 3.3
+                }
+            },
+            "child": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 3.3,
+                    "high_above": 3.3
+                }
+            },
+            "adolescent": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 3.3,
+                    "high_above": 3.3
+                }
+            },
+            "adult": {
+                "default": {
+                    "low_below": 0.5,
+                    "normal_min": 0.5,
+                    "normal_max": 3.3,
+                    "high_above": 3.3
+                }
+            }
+        },
+        "description": "Marker related to endogenous insulin production; interpretation depends on glucose level and clinical context.",
+        "source": "Prototype range; lab ranges vary significantly"
+    }
+}

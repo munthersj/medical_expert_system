@@ -1,0 +1,75 @@
+{
+  "microcytic_anemia_and_diabetes": {
+    "sex": "female",
+    "age": 25,
+    "values": {
+      "hemoglobin": 10.1,
+      "hematocrit": 33,
+      "rbc": 4.0,
+      "wbc": 7800,
+      "platelets": 350000,
+      "mcv": 72,
+      "mch": 24,
+      "mchc": 31,
+      "rdw": 16.0,
+      "fasting_glucose": 142,
+      "hba1c": 7.2
+    }
+  },
+  "infection_with_neutrophilia": {
+    "sex": "male",
+     "age": 20,
+    "values": {
+      "hemoglobin": 15.0,
+      "wbc": 15500,
+      "platelets": 280000,
+      "neutrophils_percent": 82,
+      "lymphocytes_percent": 12
+    }
+  },
+  "discordant_glucose": {
+    "sex": "female",
+     "age": 29,
+    "values": {
+      "fasting_glucose": 92,
+      "hba1c": 7.0
+    }
+  },
+  "urgent_neutropenia": {
+    "sex": "female",
+     "age": 24,
+    "values": {
+      "hemoglobin": 12.5,
+      "wbc": 1200,
+      "platelets": 180000,
+      "neutrophils_percent": 30
+    }
+  },
+  "urgent_low_platelets": {
+    "sex": "male",
+     "age": 30,
+    "values": {
+      "hemoglobin": 13.8,
+      "wbc": 6000,
+      "platelets": 32000
+    }
+  },
+  "expanded_glucose_and_differential_case": {
+  "sex": "female",
+  "age": 30,
+  "values": {
+    "wbc": 12000,
+    "neutrophils_percent": 82,
+    "lymphocytes_percent": 12,
+    "monocytes_percent": 4,
+    "eosinophils_percent": 1,
+    "basophils_percent": 1,
+    "platelets": 130000,
+    "mpv": 12.0,
+    "fasting_glucose": 95,
+    "ogtt_2h_glucose": 215,
+    "hba1c": 6.8,
+    "fructosamine": 350
+  }
+}
+}

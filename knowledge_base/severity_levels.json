@@ -1,0 +1,28 @@
+{
+  "score_levels": [
+    {
+      "min_score": 1,
+      "max_score": 3,
+      "label": "weak",
+      "display_name": "Weak evidence"
+    },
+    {
+      "min_score": 4,
+      "max_score": 6,
+      "label": "possible",
+      "display_name": "Possible pattern"
+    },
+    {
+      "min_score": 7,
+      "max_score": 9,
+      "label": "moderate",
+      "display_name": "Moderate evidence"
+    },
+    {
+      "min_score": 10,
+      "max_score": 999,
+      "label": "strong",
+      "display_name": "Strong pattern evidence"
+    }
+  ]
+}
