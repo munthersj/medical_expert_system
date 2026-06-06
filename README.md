@@ -2,7 +2,8 @@
 
 # 🩺 Medical Expert System Using Experta
 
-### A dark-themed, explainable, rule-based medical lab interpretation system  
+### A dark-themed, explainable, rule-based medical lab interpretation system
+
 #### Built with Python, Experta, Streamlit, and JSON Knowledge Bases
 
 <br/>
@@ -54,18 +55,18 @@ flowchart TD
 
 ## ✨ Key Features
 
-| Feature | Description |
-|---|---|
-| 🧠 **Experta Expert System** | Uses facts and rules through Experta for medical reasoning |
-| 🧬 **CBC Interpretation** | Supports hemoglobin, WBC, platelets, RBC indices, differential counts, and more |
+| Feature                       | Description                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------------- |
+| 🧠 **Experta Expert System**  | Uses facts and rules through Experta for medical reasoning                                  |
+| 🧬 **CBC Interpretation**     | Supports hemoglobin, WBC, platelets, RBC indices, differential counts, and more             |
 | 🍬 **Glucose Interpretation** | Supports fasting glucose, random glucose, OGTT, HbA1c, fructosamine, insulin, and C-peptide |
-| 👤 **Age + Sex Context** | Classifies values differently depending on patient age group and sex |
-| 🔁 **Unit Conversion** | Converts multiple lab units into standard internal units |
-| 🧮 **Derived Values** | Calculates ANC, ALC, AEC, absolute monocytes, and absolute basophils |
-| 🚨 **Urgent Patterns** | Detects potentially urgent lab patterns through expert rules |
-| 🧾 **Explainable Report** | Shows matched rules, reasoning, scores, follow-up tests, and advice |
-| 🌙 **Dark Medical UI** | Streamlit interface with dark theme, cards, badges, and simple animations |
-| 🔍 **OCR-Ready Structure** | Input format is ready for future OCR extraction |
+| 👤 **Age + Sex Context**      | Classifies values differently depending on patient age group and sex                        |
+| 🔁 **Unit Conversion**        | Converts multiple lab units into standard internal units                                    |
+| 🧮 **Derived Values**         | Calculates ANC, ALC, AEC, absolute monocytes, and absolute basophils                        |
+| 🚨 **Urgent Patterns**        | Detects potentially urgent lab patterns through expert rules                                |
+| 🧾 **Explainable Report**     | Shows matched rules, reasoning, scores, follow-up tests, and advice                         |
+| 🌙 **Dark Medical UI**        | Streamlit interface with dark theme, cards, badges, and simple animations                   |
+| 🔍 **OCR-Ready Structure**    | Input format is ready for future OCR extraction                                             |
 
 ---
 
@@ -126,56 +127,56 @@ This makes the system a real **rule-based expert system**, where medical conclus
 
 ### CBC Panel
 
-| Test | Internal ID |
-|---|---|
-| Hemoglobin | `hemoglobin` |
-| Hematocrit | `hematocrit` |
-| Red Blood Cells | `rbc` |
-| White Blood Cells | `wbc` |
-| Platelets | `platelets` |
+| Test              | Internal ID  |
+| ----------------- | ------------ |
+| Hemoglobin        | `hemoglobin` |
+| Hematocrit        | `hematocrit` |
+| Red Blood Cells   | `rbc`        |
+| White Blood Cells | `wbc`        |
+| Platelets         | `platelets`  |
 
 ### RBC Indices
 
-| Test | Internal ID |
-|---|---|
-| Mean Corpuscular Volume | `mcv` |
-| Mean Corpuscular Hemoglobin | `mch` |
-| Mean Corpuscular Hemoglobin Concentration | `mchc` |
-| Red Cell Distribution Width | `rdw` |
+| Test                                      | Internal ID |
+| ----------------------------------------- | ----------- |
+| Mean Corpuscular Volume                   | `mcv`       |
+| Mean Corpuscular Hemoglobin               | `mch`       |
+| Mean Corpuscular Hemoglobin Concentration | `mchc`      |
+| Red Cell Distribution Width               | `rdw`       |
 
 ### WBC Differential
 
-| Test | Internal ID |
-|---|---|
+| Test          | Internal ID           |
+| ------------- | --------------------- |
 | Neutrophils % | `neutrophils_percent` |
 | Lymphocytes % | `lymphocytes_percent` |
-| Monocytes % | `monocytes_percent` |
+| Monocytes %   | `monocytes_percent`   |
 | Eosinophils % | `eosinophils_percent` |
-| Basophils % | `basophils_percent` |
+| Basophils %   | `basophils_percent`   |
 
 ### Derived WBC Values
 
-| Derived Value | Formula |
-|---|---|
-| ANC | `WBC × Neutrophils% / 100` |
-| ALC | `WBC × Lymphocytes% / 100` |
-| AEC | `WBC × Eosinophils% / 100` |
-| Absolute Monocytes | `WBC × Monocytes% / 100` |
-| Absolute Basophils | `WBC × Basophils% / 100` |
+| Derived Value      | Formula                    |
+| ------------------ | -------------------------- |
+| ANC                | `WBC × Neutrophils% / 100` |
+| ALC                | `WBC × Lymphocytes% / 100` |
+| AEC                | `WBC × Eosinophils% / 100` |
+| Absolute Monocytes | `WBC × Monocytes% / 100`   |
+| Absolute Basophils | `WBC × Basophils% / 100`   |
 
 ### Glucose-Related Tests
 
-| Test | Internal ID |
-|---|---|
-| Fasting Glucose | `fasting_glucose` |
-| Random Glucose | `random_glucose` |
-| Postprandial Glucose | `postprandial_glucose` |
-| OGTT 2-Hour Glucose | `ogtt_2h_glucose` |
-| HbA1c | `hba1c` |
+| Test                      | Internal ID                 |
+| ------------------------- | --------------------------- |
+| Fasting Glucose           | `fasting_glucose`           |
+| Random Glucose            | `random_glucose`            |
+| Postprandial Glucose      | `postprandial_glucose`      |
+| OGTT 2-Hour Glucose       | `ogtt_2h_glucose`           |
+| HbA1c                     | `hba1c`                     |
 | Estimated Average Glucose | `estimated_average_glucose` |
-| Fructosamine | `fructosamine` |
-| Fasting Insulin | `fasting_insulin` |
-| C-Peptide | `c_peptide` |
+| Fructosamine              | `fructosamine`              |
+| Fasting Insulin           | `fasting_insulin`           |
+| C-Peptide                 | `c_peptide`                 |
 
 ---
 
@@ -193,12 +194,12 @@ The system uses patient context:
 
 Supported age groups:
 
-| Age Group | Rule |
-|---|---|
-| `newborn` | age < 1 |
-| `child` | 1 ≤ age < 13 |
+| Age Group    | Rule          |
+| ------------ | ------------- |
+| `newborn`    | age < 1       |
+| `child`      | 1 ≤ age < 13  |
 | `adolescent` | 13 ≤ age < 18 |
-| `adult` | age ≥ 18 |
+| `adult`      | age ≥ 18      |
 
 ### Why this matters
 
@@ -224,13 +225,13 @@ core/unit_converter.py
 
 ### Examples
 
-| Input | Normalized |
-|---|---|
-| `WBC = 9.8 10^9/L` | `9800 cells/mcL` |
+| Input                    | Normalized         |
+| ------------------------ | ------------------ |
+| `WBC = 9.8 10^9/L`       | `9800 cells/mcL`   |
 | `Platelets = 390 10^9/L` | `390000 cells/mcL` |
-| `Glucose = 7.9 mmol/L` | `142.2 mg/dL` |
-| `Hemoglobin = 101 g/L` | `10.1 g/dL` |
-| `HbA1c = 55 mmol/mol` | `≈ 7.18 %` |
+| `Glucose = 7.9 mmol/L`   | `142.2 mg/dL`      |
+| `Hemoglobin = 101 g/L`   | `10.1 g/dL`        |
+| `HbA1c = 55 mmol/mol`    | `≈ 7.18 %`         |
 
 ### Supported Input Styles
 
@@ -349,22 +350,22 @@ medical_expert_system/
 
 ## 🧩 File Responsibilities
 
-| File | Responsibility |
-|---|---|
-| `app.py` | Streamlit dark medical UI |
-| `main.py` | Terminal testing entry point |
-| `core/analyzer.py` | Main analysis pipeline |
-| `core/experta_engine.py` | Main Experta rule engine |
-| `core/classifier.py` | Classifies values into statuses |
-| `core/unit_converter.py` | Converts input units |
-| `core/derived_values.py` | Calculates ANC, ALC, AEC, etc. |
-| `core/report_builder.py` | Builds final structured report |
-| `core/scorer.py` | Calculates condition scores |
-| `core/validator.py` | Validates knowledge base files |
-| `knowledge_base/tests.json` | Lab tests and reference ranges |
-| `knowledge_base/conditions.json` | Condition descriptions and advice |
-| `knowledge_base/units.json` | Unit conversion rules |
-| `knowledge_base/severity_levels.json` | Score interpretation levels |
+| File                                  | Responsibility                    |
+| ------------------------------------- | --------------------------------- |
+| `app.py`                              | Streamlit dark medical UI         |
+| `main.py`                             | Terminal testing entry point      |
+| `core/analyzer.py`                    | Main analysis pipeline            |
+| `core/experta_engine.py`              | Main Experta rule engine          |
+| `core/classifier.py`                  | Classifies values into statuses   |
+| `core/unit_converter.py`              | Converts input units              |
+| `core/derived_values.py`              | Calculates ANC, ALC, AEC, etc.    |
+| `core/report_builder.py`              | Builds final structured report    |
+| `core/scorer.py`                      | Calculates condition scores       |
+| `core/validator.py`                   | Validates knowledge base files    |
+| `knowledge_base/tests.json`           | Lab tests and reference ranges    |
+| `knowledge_base/conditions.json`      | Condition descriptions and advice |
+| `knowledge_base/units.json`           | Unit conversion rules             |
+| `knowledge_base/severity_levels.json` | Score interpretation levels       |
 
 ---
 
@@ -513,22 +514,22 @@ Possible patterns:
 
 ## ✅ Suggested Test Cases
 
-| # | Case | Expected Patterns |
-|---|---|---|
-| 1 | Normal adult | No major pattern |
-| 2 | Microcytic anemia | Anemia + microcytic anemia |
-| 3 | Macrocytic anemia | Anemia + macrocytic anemia |
-| 4 | Normocytic anemia | Anemia + normocytic anemia |
-| 5 | Infection with neutrophilia | Infection/inflammation + neutrophilia |
-| 6 | Thrombocytopenia urgent case | Thrombocytopenia + urgent pattern |
-| 7 | Combined cytopenia | Combined cytopenia |
-| 8 | Prediabetes | Prediabetes pattern |
-| 9 | Diabetes with mixed units | Diabetes pattern |
-| 10 | Very high HbA1c | Poor long-term glucose control |
-| 11 | Discordant glucose | Discordant glucose results |
-| 12 | Hypoglycemia urgent case | Hypoglycemia + urgent pattern |
-| 13 | Age effect test | Different output for child vs adult |
-| 14 | Newborn range test | Newborn-specific interpretation |
+| #   | Case                         | Expected Patterns                     |
+| --- | ---------------------------- | ------------------------------------- |
+| 1   | Normal adult                 | No major pattern                      |
+| 2   | Microcytic anemia            | Anemia + microcytic anemia            |
+| 3   | Macrocytic anemia            | Anemia + macrocytic anemia            |
+| 4   | Normocytic anemia            | Anemia + normocytic anemia            |
+| 5   | Infection with neutrophilia  | Infection/inflammation + neutrophilia |
+| 6   | Thrombocytopenia urgent case | Thrombocytopenia + urgent pattern     |
+| 7   | Combined cytopenia           | Combined cytopenia                    |
+| 8   | Prediabetes                  | Prediabetes pattern                   |
+| 9   | Diabetes with mixed units    | Diabetes pattern                      |
+| 10  | Very high HbA1c              | Poor long-term glucose control        |
+| 11  | Discordant glucose           | Discordant glucose results            |
+| 12  | Hypoglycemia urgent case     | Hypoglycemia + urgent pattern         |
+| 13  | Age effect test              | Different output for child vs adult   |
+| 14  | Newborn range test           | Newborn-specific interpretation       |
 
 ---
 
@@ -630,13 +631,6 @@ Then it should map the extracted test name to the internal test ID using aliases
 - More advanced pediatric ranges
 - Visual rule editor
 - Admin dashboard for editing the knowledge base
-
----
-
-## 🧾 License
-
-This project is currently for educational use.  
-You may add an open-source license such as MIT if you plan to publish it publicly.
 
 ---
 
